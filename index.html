@@ -195,7 +195,7 @@ function iniciar(){
       if(index < mensajes.length){
         document.getElementById(mensajes[index]).style.opacity = 1;
         index++;
-        setTimeout(mostrarSiguiente, 4000);
+        setTimeout(mostrarSiguiente, 8000);
       } else {
         // CONTINÚA TODO EXACTAMENTE IGUAL
         document.getElementById("hierba").style.display="block";
@@ -215,16 +215,16 @@ function iniciar(){
       setTimeout(()=>{
         document.getElementById(id).style.opacity = 1;
       }, delay);
-      delay += 8000;
+      delay += 3000;
     });
 
-    setTimeout(()=>{document.getElementById("hierba").style.display="block";},8000);
+    setTimeout(()=>{document.getElementById("hierba").style.display="block";},3000);
     setTimeout(()=>{
       document.getElementById("centro").style.display="block";
       iniciarFuegos();
       iniciarHojas();
       iniciarParticles();
-    },7000);
+    },5000);
   }
 }
 
@@ -386,6 +386,7 @@ for(let i=0;i<40;i++){
 
 </body>
 </html>
+
 
 
 
